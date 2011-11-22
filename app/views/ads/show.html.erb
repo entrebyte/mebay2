@@ -1,0 +1,25 @@
+<p>
+	<strong>Name:<%= @ad.name %></strong>
+</p>
+
+<p>
+	<strong>Description:<%= @ad.description %></strong>
+</p>
+
+<p>
+	<strong>Price:<%= @ad.price %></strong>
+</p>
+
+<p>
+	<strong>Seller ID:<%= @ad.seller_id %></strong>
+</p>
+
+<p>
+	<strong>Email:<%= @ad.email %></strong>
+</p>
+
+<p>
+	<img src="<%= @ad.img_url %>">
+</p>
+
+<a href="/ads/<%= @ad.id %>/edit">Edit</a>

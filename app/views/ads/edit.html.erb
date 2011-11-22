@@ -1,0 +1,39 @@
+<h1>Editing <%= @ad.name %></h1>
+
+<%= form_for(@ad, :url=>{:action=>'update'}) do |f| %>
+
+<p>
+	<strong>Name:<br />
+	<%= f.text_field :name %></strong>
+</p>
+
+<p>
+	<strong>Description:<br />
+	<%= f.text_area :description %></strong>
+</p>
+
+<p>
+	<strong>Price:<br />
+	<%= f.text_field :price %></strong>
+</p>
+
+<p>
+	<strong>Seller ID:<br />
+	<%= f.text_field :seller_id %></strong>
+</p>
+
+<p>
+	<strong>Email:<br />
+	<%= f.text_field :email %></strong>
+</p>
+
+<p>
+	<strong>Image URL:</strong><br />
+	<%= f.text_field :img_url %>
+</p>
+
+<p>
+	<%= f.submit "update" %>
+</p>
+
+<% end %>
